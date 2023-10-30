@@ -1,107 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link-->
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<title>CSTU Passport</title>
+    <!--Title-->
+    <title>CSTU Passport</title>
 </head>
 <body>
+    <header>
+        <!--Logo Web-->
+        <a href="index.html" class="logo">CSTU PASSPORT</a>
+        <!--Menu-->
+        <input type="checkbox" id="menu">
+        <label for="menu" class="icon">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+        <!--Navbar-->
+        <nav class="navbar">
+            <ul class="list">
+                <li id="item"><a href="html/myProfile.html">About Me</a></li>
+                <li id="item"><a href="html/myAdvisor.html">Advisor</a></li>
+                <li id="item"><a href="html/myActivities.html">TU Activity</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>CSTU PASSPORT</h1>
-</header>
-
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li><a href="html/myProfile.html">About Me</a></li>
-      <li><a href="html/myAdvisor.html">Advisor</a></li>
-      <li><a href="html/myActivities.html">TU Activity</a></li>
-    </ul>
-  </div>
-
-  <div class="col-6 col-s-9">
-    <section class="profile">
-      <figure id="profile">
-        <img src="image/v1.jpg">
-    </figure>
-    <section class="content">
-        <h2 id="headinfor">INFORMATION</h2>
-
-        <aside class="infor">
-            <div id="idstudent">
-                <h3><b><u>Student ID</u> :</b>  6609650053</h3>
+    <main>
+        <!--Profile img-->
+        <figure class="profile">
+            <div id="imgprofile">
+                <img src="image/v1.jpg">
             </div>
             
-            <div class="Me">
-                    <table>
-                        <tr id="name1">
-                            <td id="name"><b>Name :</b>Suphawit</td>
-                            <td id="name"><b>Surname :</b>Hngosakul</td>
-                            <td id="nickname"><b>Nickname :</b>View</td>
-                        </tr>
-                        <tr id ="name2">
-                            <td id="name"><b>ชื่อ :</b> ศุภวิชญ์</td>
-                            <td id="name"><b>นามสกุล :</b>หงอสกุล</td>
-                            <td id="nickname"><b>ชื่อเล่น :</b>วิว</td>
-                        </tr>
-                    </table>
-                <div id="bd">
-                    <b>Birthday :</b>29/07/2547 &nbsp;&nbsp;<b>Age :</b>19 Years
-                </div>
-            
-            </div>
-            <br>
-        </aside>
-        <div id="presen">
-            <center></video><video src="VDO/VDOpre.mp4" width="250" controls></video></center>
+        </figure>
+        <!--Content-->
+        <section class="content">
+            <!--Head Content-->
+            <h2 id="headinfor">INFORMATION</h2>
+            <!--Information-->
+            <aside class="infor">
+                <div id="idstudent"></div>
+                <div class="me"></div>
+            </aside>
+        </section>
+    </main>
+    <!--Contact-->
+    <footer>
+        <!--Head Contact-->
+        <b id="headcontact">CONTACT</b>
+        <hr id="linecontact" color="#F5F5DC">
+        <!--Contact-->
+        <div class="contact">
+            <!--Contact1-->
+            <span class="link1">
+                <ul>
+                    <li><b>Email :</b><a href="mailto:suphawit.hng@dome.tu.ac.th"> suphawit.hng@dome.tu.ac.th</a></li>
+                    <li><b>Phone :</b><a href="tel:065022741"> 0655022741</a></li>  
+                </ul>
+            </span>
+            <!--Contact2-->
+            <span class="link2">
+                <ul>
+                    <li><a href="https://line.me/ti/p/oL977bDu9g" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                    <li><a href="https://www.facebook.com/suphawit.hngosakul" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/_s.vvixw.29/?hl=th" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/Kumieiei29" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </span>
         </div>
-    </section>
-    </section>
-  </div>
-
-  <div class="col-3 col-s-12">
-    <section class="education">
-      <div id="headeducation"><h2>Education</h2></div>
-      <div class="edu1">
-        <p><b>ระดับประถมศึกษา</b><br>โรงเรียนสุธินอนุสรณ์ จ.พังงา</p>
-        <img src="image/school.png">
-      </div>
-      <div class="edu2">
-        <p><b>ระดับมัธยมศึกษา</b><br>โรงเรียนตะกั่วป่า"เสนานุกูล" จ.พังงา</p>
-        <img src="image/sena.jpg">
-      </div>
-    </section>
-  </div>
-</div>
-
-<footer>
-  <b class="headcontact">CONTACT</b>
-  <hr id="con">
-
-  <div class="contact">
-    <span class="link1">
-      <ul>
-        <li><b>Email :</b><a href="mailto:suphawit.hng@dome.tu.ac.th"> suphawit.hng@dome.tu.ac.th</a></li>
-        <li><b>Phone :</b><a href="tel:065022741"> 0655022741</a></li>  
-      </ul>
-    </span>
-    
-    <span class="link2">
-      <ul>
-        <li><a href="https://line.me/ti/p/oL977bDu9g" target="_blank"><i class="fa-brands fa-line"></i></a></li>
-        <li><a href="https://www.facebook.com/suphawit.hngosakul" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/_s.vvixw.29/?hl=th" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://twitter.com/Kumieiei29" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-      </ul>
-    </span>
-  </div>
-</footer>
-
+    </footer>
 </body>
 </html>
-
-
