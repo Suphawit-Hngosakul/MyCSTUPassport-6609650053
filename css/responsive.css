@@ -88,6 +88,7 @@
         }
         #linecontact{
             display: block;
+            width: 90%;
             margin-bottom: 1rem;
         }
         .contact{
